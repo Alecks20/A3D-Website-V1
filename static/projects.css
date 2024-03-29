@@ -1,0 +1,150 @@
+body {
+    background-image: url('https://media.a3d.pro/i/4214c823-4b97-4937-8df6-8699857aef4e.jpg');
+    background-size: fixed;
+    background-position: fixed;
+    font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if custom font fails to load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar {
+    background-color: #333;
+    position: fixed;
+    top: 30px;
+    left: 50%;  /* Move the entire element's left side to center of viewport */
+    transform: translateX(-50%);  /* Shifts it back left by half its width, effectively centering */
+    z-index: 1000;
+    text-align: center;
+    width: 13%;  /* Adjust this value to your preference */
+    padding: 14px 0;
+    border-radius: 2.5px;  /* Round the corners of the bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for a floating effect */
+    position: fixed;
+    
+}
+
+.top-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.top-bar li {
+    display: inline-block;
+    margin: 0 0.001px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 2.5px;  /* Round the corners of the buttons */
+}
+
+.top-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-bar .active a {
+    background-color: #555;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/outfit-bold.tff') formet('toff');
+    font-weight: normal;
+    font-size: normal;
+}
+
+/* Top bar styling */
+.top-bar {
+    background-color: #333;  /* Dark background */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;  /* Ensures the top bar stays on top */
+    /* ... any other top bar styles ... */
+}
+
+/* Adjust body padding to account for the fixed top bar */
+body {
+    padding-top: 60px;  /* Assuming your top bar height is around 60px; adjust if different */
+}
+
+.projects-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #333;  /* Same dark background as the top bar */
+    color: white;
+    padding: 20px;  /* Some padding inside the container */
+    border-radius: 10px;  /* Rounded corners */
+}
+
+.projects-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;  /* White color to match top bar */
+}
+
+.projects-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects-container li {
+    margin: 20px 0;
+}
+
+
+.projects-container a {
+    display: flex;  
+    align-items: center;  
+    font-size: 18px;
+    color: #aaa;  /* Lighter color for the project title */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.projects-container a:hover {
+    color: #ddd;  /* Even lighter shade for hover */
+}
+
+.project-description {
+    margin: 10px 0 20px 30px;
+    font-size: 14px;
+    color: #bbb;  /* This remains the color for the description, which is darker than the title */
+}
+
+.popup-modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 1000; /* Ensure it's above all content */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.close-popup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Size of the close button */
+}

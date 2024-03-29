@@ -1,0 +1,112 @@
+body {
+    background-image: url('https://media.a3d.pro/i/4214c823-4b97-4937-8df6-8699857aef4e.jpg');
+    background-size: fixed;
+    background-position: fixed;
+    font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if custom font fails to load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar {
+    background-color: #333;
+    position: fixed;
+    top: 30px;
+    left: 50%;  /* Move the entire element's left side to center of viewport */
+    transform: translateX(-50%);  /* Shifts it back left by half its width, effectively centering */
+    z-index: 1000;
+    text-align: center;
+    width: 13%;  /* Adjust this value to your preference */
+    padding: 14px 0;
+    border-radius: 2.5px;  /* Round the corners of the bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for a floating effect */
+}
+
+.top-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.top-bar li {
+    display: inline-block;
+    margin: 0 0.001px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 2.5px;  /* Round the corners of the buttons */
+}
+
+.top-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-bar .active a {
+    background-color: #555;
+}
+
+.top-bar {
+    background-color: #333;  /* Dark background */
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;  /* Ensures the top bar stays on top */
+    /* ... any other top bar styles ... */
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins/outfit-bold.tff') formet('toff');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.about-box {
+    width: 25%; 
+    margin: 40px auto;  
+    border: 1px solid #555;  /* Slightly lighter border than the top bar for contrast */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;  
+    background-color: #333; /* Same color as the top bar */
+    color: white; /* Same text color as the top bar */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 60px); /* Assuming the top bar is about 60px in height; adjust if different */
+    margin-top: 375px; /* Push content below the top bar */
+    position: relative; /* Add this so it starts positioning relative to this container */
+}
+
+.about-links {
+    margin-top: 20px;
+    display: flex;  /* Use flexbox to lay out the links side by side */
+    padding: 10px 0;
+    justify-content: center;
+    gap: 30px;
+    width: 60%;  /* Adjust based on your design */
+    margin-left: auto;
+    margin-right: auto; /* Centers the links container */
+}
+
+.about-links a {
+    color: white;  
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about-links a:hover {
+    color: #ddd; 
+}
+
+.about-title {
+    font-size: 50px;  /* Adjust this value to your preference */
+    /* ... other styles ... */
+}

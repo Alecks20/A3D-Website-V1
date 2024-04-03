@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://media.alecks.dev/content/a60s10vk8mjq9vdwrhxx-a3d-website-v1-background.jpg');
+    background-image: url('./background.jpg');
     background-size: fixed;
     background-position: fixed;
     font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if custom font fails to load */

@@ -1,5 +1,5 @@
 body {
-    background-image: url('./background.jpg');
+    background-image: url('https://a3d-website-v1.pages.dev/background.jpg');
     background-size: fixed;
     background-position: fixed;
     font-family: 'Poppins', sans-serif; /* Fallback to sans-serif if custom font fails to load */
